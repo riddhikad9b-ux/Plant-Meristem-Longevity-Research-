@@ -1,14 +1,23 @@
-# Plant Meristem Longevity – Research Labs v1 to v7
+# 🌱 Plant-Meristem-Longevity-Research (PDB: 1LCD)
 
-An end-to-end computational biotechnology pipeline designed to evaluate meristematic stem-cell resilience, genomic stability, and longevity pathways in perennial species like *Ginkgo biloba*.
+An advanced multi-modal structural bioinformatics and thermal flexibility workspace designed for analyzing plant meristem longevity characteristics using PDB ID `1LCD`.
 
-## 🔬 Project Overview
+## 🚀 Overview
+This repository features an interactive web-based dashboard built with **Python**, **Gradio**, and **Matplotlib**. It automatically parses crystallographic coordinate files from the Protein Data Bank (RCSB PDB) and computes quantitative structural metrics.
 
-This repository contains a modular Google Colab notebook framework divided into progressive research phases:
-- **Research Lab v1:** Literature evidence matrix tracking, structured Pandas data integration, distribution visualizations, and automated reporting.
-- **Research Lab v2:** Advanced bioinformatics processing via Biopython (FASTA parsing, translation, Open Reading Frame scanning, restriction mapping).
-- **Research Lab v3:** Structural bioinformatics pipeline utilizing Biopython (`Bio.PDB`) to fetch PDB structures (`1LCD`), extract $C_{\alpha}$ backbone coordinates, compute pairwise Euclidean distance matrices, and render heatmaps.
-- **Research Lab v4:** Binary contact map generation ($8.0 \text{ \AA}$ threshold) and distance distribution statistics.
-- **Research Lab v5:** Residue contact network graph construction, degree centrality scoring, and structural hub identification.
-- **Research Lab v6:** Thermal flexibility and B-factor profiling (with positional deviation proxy fallback).
-- **Research Lab v7:** Amino acid physicochemical composition and hydrophobic core profiling.
+## 📊 Analytical Dashboard Tabs
+* **3D Spatial View**: Maps alpha-carbon ($CA$) atomic coordinates in a 3D projection color-coded by thermal mobility (B-factor).
+* **Thermal Profile (B-Factor)**: Plots sequence-level thermal fluctuations across residue indexes to differentiate rigid structural domains from flexible regulatory loops.
+* **Residue Contact Network**: Computes pairwise Euclidean distance matrices to map intramolecular contacts and spatial packing.
+
+## 🛠️ Tech Stack & Requirements
+* Python 3.x
+* `gradio`
+* `matplotlib`
+* `numpy`
+
+## 🏃 Quick Start
+To launch the interactive dashboard locally or in Google Colab:
+```bash
+python app_gradio.py
+
