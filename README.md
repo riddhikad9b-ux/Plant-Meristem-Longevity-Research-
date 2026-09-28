@@ -1,29 +1,17 @@
-# Plant-Meristem-Longevity-Research
+## Research Matrix & Literature Database
 
-An advanced multi-modal structural biology research project focused on plant meristem longevity, cellular resilience, DNA repair, and comparative analysis.
+This repository includes an automated research matrix tracking key molecular mechanisms of plant meristem longevity and cellular resilience across multiple studies.
 
-## Overview
+### Core Pathways Tracked:
+* **Hormone Signaling & Stem Cell Maintenance:** Cytokinin signaling (`AHK/WUS`) and feedback loops.
+* **Stress Memory & Signaling:** Heterotrimeric G-protein signaling in abiotic stress responses.
+* **Genome Stability & DNA Repair:** Ku70 and NHEJ components in long-lived perennials like *Ginkgo biloba*.
+* **Proteostasis & Autophagy:** `ATG8` dynamics and basal autophagy flux.
+* **Epigenetic Regulation:** DNA methylation and Polycomb group histone modifications.
+* **Stem Cell Niches:** `CLV3/WUS` negative feedback regulation.
+* **Antioxidant Defense:** ROS scavenging pathways (`SOD`/`CAT`) in woody perennials.
+* **Somatic Mutation Control:** Replication fidelity and mutation load tracking across centuries in trees like *Quercus robur*.
 
-This repository features an interactive structural biology analysis dashboard for studying molecular mechanisms associated with plant meristem longevity and cellular resilience.
+### Python Integration
+A helper function (`add_research_paper`) is provided in the analysis pipeline to dynamically append new literature entries with standardized fields (DOI, pathways, experimental methods, limitations, and confidence labels) directly into `research_matrix.csv`.
 
-## Analytical Dashboard Tabs
-
-* **3D Spatial View**: Maps alpha-carbon coordinates and displays the molecular structure in three-dimensional space.
-* **Thermal Profile (B-Factor)**: Plots thermal/B-factor information across the structure.
-* **Residue Contact Network**: Computes and visualizes residue-residue contact relationships.
-
-## Tech Stack & Requirements
-
-* Python 3.x
-* `gradio`
-* `matplotlib`
-* `numpy`
-
-## Quick Start
-
-### 1. Clone the repository
-```bash
-git clone [https://github.com/riddhikad9b-ux/Plant-Meristem-Longevity-Research-.git](https://github.com/riddhikad9b-ux/Plant-Meristem-Longevity-Research-.git)
-
-pip install gradio matplotlib numpy
-python app.py
