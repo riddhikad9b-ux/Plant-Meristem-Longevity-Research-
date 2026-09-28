@@ -2,7 +2,7 @@
 
 This repository includes an automated research matrix tracking key molecular mechanisms of plant meristem longevity and cellular resilience across multiple studies.
 
-### Core Pathways Tracked:
+### Core Pathways Tracked
 * **Hormone Signaling & Stem Cell Maintenance:** Cytokinin signaling (`AHK/WUS`) and feedback loops.
 * **Stress Memory & Signaling:** Heterotrimeric G-protein signaling in abiotic stress responses.
 * **Genome Stability & DNA Repair:** Ku70 and NHEJ components in long-lived perennials like *Ginkgo biloba*.
@@ -13,5 +13,5 @@ This repository includes an automated research matrix tracking key molecular mec
 * **Somatic Mutation Control:** Replication fidelity and mutation load tracking across centuries in trees like *Quercus robur*.
 
 ### Python Integration
-A helper function (`add_research_paper`) is provided in the analysis pipeline to dynamically append new literature entries with standardized fields (DOI, pathways, experimental methods, limitations, and confidence labels) directly into `research_matrix.csv`.
+A helper function (`add_research_paper`) is provided in the analysis pipeline to dynamically append new literature entries with standardized fields directly into `research_matrix.csv`.
 
