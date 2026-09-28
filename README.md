@@ -1,23 +1,29 @@
-# 🌱 Plant-Meristem-Longevity-Research (PDB: 1LCD)
+# Plant-Meristem-Longevity-Research
 
-An advanced multi-modal structural bioinformatics and thermal flexibility workspace designed for analyzing plant meristem longevity characteristics using PDB ID `1LCD`.
+An advanced multi-modal structural biology research project focused on plant meristem longevity, cellular resilience, DNA repair, and comparative analysis.
 
-## 🚀 Overview
-This repository features an interactive web-based dashboard built with **Python**, **Gradio**, and **Matplotlib**. It automatically parses crystallographic coordinate files from the Protein Data Bank (RCSB PDB) and computes quantitative structural metrics.
+## Overview
 
-## 📊 Analytical Dashboard Tabs
-* **3D Spatial View**: Maps alpha-carbon ($CA$) atomic coordinates in a 3D projection color-coded by thermal mobility (B-factor).
-* **Thermal Profile (B-Factor)**: Plots sequence-level thermal fluctuations across residue indexes to differentiate rigid structural domains from flexible regulatory loops.
-* **Residue Contact Network**: Computes pairwise Euclidean distance matrices to map intramolecular contacts and spatial packing.
+This repository features an interactive structural biology analysis dashboard for studying molecular mechanisms associated with plant meristem longevity and cellular resilience.
 
-## 🛠️ Tech Stack & Requirements
+## Analytical Dashboard Tabs
+
+* **3D Spatial View**: Maps alpha-carbon coordinates and displays the molecular structure in three-dimensional space.
+* **Thermal Profile (B-Factor)**: Plots thermal/B-factor information across the structure.
+* **Residue Contact Network**: Computes and visualizes residue-residue contact relationships.
+
+## Tech Stack & Requirements
+
 * Python 3.x
 * `gradio`
 * `matplotlib`
 * `numpy`
 
-## 🏃 Quick Start
-To launch the interactive dashboard locally or in Google Colab:
-```bash
-python app_gradio.py
+## Quick Start
 
+### 1. Clone the repository
+```bash
+git clone [https://github.com/riddhikad9b-ux/Plant-Meristem-Longevity-Research-.git](https://github.com/riddhikad9b-ux/Plant-Meristem-Longevity-Research-.git)
+
+pip install gradio matplotlib numpy
+python app.py
