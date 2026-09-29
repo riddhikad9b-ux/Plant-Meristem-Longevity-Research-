@@ -1,17 +1,42 @@
-## Research Matrix & Literature Database
+Aama, ungaloda GitHub repository-ku oru **README.md** file add panrathu romba nalla idea! Appo thaan intha project enna pathinathu (Plant Meristem Longevity Research Dashboard) nu, athu epdi run panrathu nu pakkaravangalukku clear-ah puriyum.
 
-This repository includes an automated research matrix tracking key molecular mechanisms of plant meristem longevity and cellular resilience across multiple studies.
+Oru simple README template inga irukku, ise ungaloda project folder-la `README.md` nu create panni potukalam:
 
-### Core Pathways Tracked
-* **Hormone Signaling & Stem Cell Maintenance:** Cytokinin signaling (`AHK/WUS`) and feedback loops.
-* **Stress Memory & Signaling:** Heterotrimeric G-protein signaling in abiotic stress responses.
-* **Genome Stability & DNA Repair:** Ku70 and NHEJ components in long-lived perennials like *Ginkgo biloba*.
-* **Proteostasis & Autophagy:** `ATG8` dynamics and basal autophagy flux.
-* **Epigenetic Regulation:** DNA methylation and Polycomb group histone modifications.
-* **Stem Cell Niches:** `CLV3/WUS` negative feedback regulation.
-* **Antioxidant Defense:** ROS scavenging pathways (`SOD`/`CAT`) in woody perennials.
-* **Somatic Mutation Control:** Replication fidelity and mutation load tracking across centuries in trees like *Quercus robur*.
+```markdown
+# 🌱 Plant Meristem Longevity Research Lab
 
-### Python Integration
-A helper function (`add_research_paper`) is provided in the analysis pipeline to dynamically append new literature entries with standardized fields directly into `research_matrix.csv`.
+An interactive research dashboard and data analysis tool built for investigating **Tree Longevity → Human Cellular Resilience** (specifically focusing on plant meristematic systems, gene pathways, and cellular quality control).
 
+## Features
+* **Interactive Literature Matrix:** Filter research pathways and papers instantly by keywords.
+* **Unsupervised ML Clustering:** Automatically group research papers using TF-IDF vectorization and K-Means clustering (`scikit-learn`).
+* **Summary Metrics & Visual Analytics:** Real-time summary cards and Matplotlib-based cluster distribution charts.
+* **Data Export:** Download the processed and clustered research dataset directly as a CSV file.
+
+## Tech Stack
+* **Python**
+* **Gradio** (Web UI Framework)
+* **Pandas / Scikit-Learn** (Data processing & Machine Learning)
+* **Matplotlib** (Visual Analytics)
+
+## How to Run Locally
+1. Clone the repository or download the files.
+2. Install the required dependencies:
+   ```bash
+   pip install gradio pandas scikit-learn matplotlib
+
+```
+
+3. Run the application:
+```bash
+python app.py
+
+```
+
+
+
+```
+
+
+
+```
