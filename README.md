@@ -1,8 +1,3 @@
-Aama, ungaloda GitHub repository-ku oru **README.md** file add panrathu romba nalla idea! Appo thaan intha project enna pathinathu (Plant Meristem Longevity Research Dashboard) nu, athu epdi run panrathu nu pakkaravangalukku clear-ah puriyum.
-
-Oru simple README template inga irukku, ise ungaloda project folder-la `README.md` nu create panni potukalam:
-
-```markdown
 # 🌱 Plant Meristem Longevity Research Lab
 
 An interactive research dashboard and data analysis tool built for investigating **Tree Longevity → Human Cellular Resilience** (specifically focusing on plant meristematic systems, gene pathways, and cellular quality control).
