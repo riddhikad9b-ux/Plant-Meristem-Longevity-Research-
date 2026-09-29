@@ -1,0 +1,13 @@
+Cohort,Cell_Type,GbWOX4,GbKu70,GbATG8,GbTPX2,GbAIL1,Somatic_SNV_Count
+15-Year (Juvenile),Central Cambial Stem Cells (WOX4+),35.37,25.79,37.49,3.855,21.45,2.1
+15-Year (Juvenile),Developing Secondary Phloem (APL+),2.225,25.77,39.31,3.885,7.49,19.755
+15-Year (Juvenile),Developing Secondary Xylem (VND6/7+),1.81875,25.10625,37.090625,3.95625,7.609375,20.259375
+15-Year (Juvenile),Mitotic Checkpoint Primed Cells (TPX2+/CDC20.1+),1.525,26.5875,37.0875,55.3625,7.675,19.875
+200-Year (Mature),Central Cambial Stem Cells (WOX4+),35.1,25.43,38.02,3.975,21.08,3.25
+200-Year (Mature),Developing Secondary Phloem (APL+),1.94,26.685,38.625,4.165,7.105,35.04
+200-Year (Mature),Developing Secondary Xylem (VND6/7+),1.99375,26.13125,37.490625,4.153125,7.45,35.54375
+200-Year (Mature),Mitotic Checkpoint Primed Cells (TPX2+/CDC20.1+),2.075,26.9875,38.5,56.8875,7.35,34.425
+600+ Year (Centenarian),Central Cambial Stem Cells (WOX4+),35.785,30.29,41.605,4.255,25.81,5.075
+600+ Year (Centenarian),Developing Secondary Phloem (APL+),2.01,29.895,41.04,3.76,7.61,49.87
+600+ Year (Centenarian),Developing Secondary Xylem (VND6/7+),1.88125,29.146875,41.4,3.99375,7.609375,49.490625
+600+ Year (Centenarian),Mitotic Checkpoint Primed Cells (TPX2+/CDC20.1+),2.025,29.275,42.7375,52.5375,8.125,49.35
