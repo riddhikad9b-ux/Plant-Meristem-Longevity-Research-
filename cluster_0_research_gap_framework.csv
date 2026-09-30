@@ -1,0 +1,6 @@
+Gap_ID,Evidence_Areas,Research_Gap,Evidence_Status,Required_Testing
+G1,WUS–CLV + Stress Priming,The available evidence does not establish how meristem signaling and stress-resilience processes interact over time.,Supported gap,Experimental interaction and temporal studies
+G2,DNA Repair + Epigenetic/Chromatin Maintenance,The available evidence does not establish how genome stability and chromatin maintenance are coordinated during long-term meristem maintenance.,Supported gap,Integrated genomic and epigenomic experiments
+G3,Autophagy + Proteostasis/Redox,"The available evidence does not establish whether autophagy, proteostasis and redox control operate as a coordinated quality-control system.",Supported gap,Multi-process cellular quality-control experiments
+G4,Multiple Biological Categories,The available evidence does not establish which relationships are causal versus merely associated.,Supported gap,Perturbation and causal-mechanism experiments
+G5,Plant Evidence + Human Cellular Aging,The available evidence does not establish functional conservation or translational equivalence between plant mechanisms and human cellular aging mechanisms.,Supported gap,Cross-species comparative experiments
