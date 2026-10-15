@@ -3,9 +3,7 @@
 ## 1. Overview & Project Transition
 This document outlines the experimental validation protocols designed to transition our findings from **computational discovery** (Stages 1–21.1) and **literature verification** (Stages 22–28) into **empirical hypothesis testing** (Stages 29–31). 
 
-While computational models and sequence alignments established high structural conservation (e.g., *Ginkgo biloba* Ku70 sharing 68.4% identity and 100% basic channel residue conservation with human Ku70/XRCC6), physical bench validation is required to test whether meristematic quality control mechanisms causally mitigate stem-cell exhaustion.
-
----
+No *Ginkgo biloba* Ku70 sequence comparison with human Ku70/XRCC6 has been computed. A previously reported 68.4% identity could not be reproduced: on 2026-10-15, BLAST searches against NCBI nr and the WGS database found no Ginkgo Ku70 record. Physical bench validation is required to test whether meristematic quality control mechanisms causally mitigate stem-cell exhaustion.
 
 ## 2. Core Experimental Protocols
 
