@@ -2,9 +2,20 @@
 ## Final Research Synthesis & Whitepaper
 
 **Project:** Plant-Meristem-Longevity-Research  
+**Author:** Riddhika D  
 **Status:** Phase 1 — Computational + Scientific Research Framework Complete  
-**Completed workflow:** Stages 1–34  
+**Completed workflow:** Stages 1–34 (summarised; the working notebook uses finer-grained headings numbered up to 54)  
 **Experimental validation:** Not yet performed
+
+---
+
+## Disclosures
+
+**Disclosure 1 — AI assistance.** This project was developed by the author with the assistance of AI tools Gemini Notebook / NotebookLM for literature mapping and drafting and Python in Google Colab. AI was used for literature summarisation, drafting and code generation. All scientific claims, numbers and citations are being checked by the author against primary sources; claims not yet checked should be treated as unverified.
+
+**Disclosure 2 — Simulated data.** `analyze_tree_neb.py` generates a *simulated* single-nuclei dataset (`np.random`, seed 42; parameters set by hand). Its outputs (`tree_neb_cohort_summary_metrics.csv`, `tree_neb_snrna_counts_summary.csv`, `tree_neb_snrna_analysis.png`) demonstrate an analysis pipeline only. Cohort differences are pre-programmed inputs, not empirical biological findings, and are not evidence about *Ginkgo biloba*. Some notebook datasets (e.g. the Stage 51 gene-feature table) are likewise hand-entered illustrative values.
+
+**Disclosure 3 — Citations and computed values.** This document does not contain a formal reference list. Evidence records are kept in the repository CSV files and notebooks. Numerical values quoted elsewhere in the project (for example sequence-alignment figures for Ku70) are candidate values until their accession numbers, method and output are documented.
 
 ---
 
@@ -62,7 +73,7 @@ These domains are treated as potentially interacting systems rather than as an a
 - Primary-literature verification
 - Mechanism-by-mechanism evidence checking
 - Cross-mechanism synthesis
-- Research-gap validation
+- Research-gap assessment
 - Central research question
 - Competing hypotheses
 - Experimental architecture
@@ -137,7 +148,9 @@ Some connections are experimentally supported, while the complete network-level 
 
 ---
 
-## 6. Validated Research Gaps
+## 6. Candidate Research Gaps
+
+These gaps were identified from an AI-assisted literature review and cross-mechanism synthesis. They are candidate gaps; they have not been independently validated, and a systematic search for prior work addressing them has not been completed.
 
 ### G1 — WUS–CLV + Stress Interaction
 
@@ -344,6 +357,8 @@ Any human translation must be independently established using human or appropria
 5. Plant-specific mechanisms may not have direct human equivalents.
 6. The current project has not performed the proposed Arabidopsis experiments.
 7. The project does not establish a treatment or intervention for human aging.
+8. The whitepaper has no formal reference list; evidence provenance is in the repository files and has not been fully re-verified against full texts.
+9. AI tools contributed to drafting and synthesis (Disclosure 1); outputs require human expert review.
 
 ---
 
@@ -377,6 +392,8 @@ Any human translation must be independently established using human or appropria
 ---
 
 ## 18. Repository Architecture
+
+*The tree below is the intended architecture. The current repository is flat (files in the top level); see the README for the actual file list.*
 
 ```text
 Plant-Meristem-Longevity-Research/

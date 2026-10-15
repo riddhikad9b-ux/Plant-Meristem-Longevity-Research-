@@ -6,6 +6,13 @@ Email: `riddhika.d9b@gmail.com`
 
 ---
 
+## Disclosures
+1. **AI assistance.** Developed by the author with AI assistance Gemini Notebook / NotebookLM and Python in Google Colab. Claims not yet checked against primary sources should be treated as unverified.
+2. **Simulated data.** `analyze_tree_neb.py` and its outputs (`tree_neb_cohort_summary_metrics.csv`, `tree_neb_snrna_counts_summary.csv`, `tree_neb_snrna_analysis.png`) are *simulated* (`np.random`, seed 42). Cohort differences are pre-programmed inputs, not empirical biological findings. Some notebook tables (e.g. Stage 51 gene features) are hand-entered illustrative values.
+3. **Candidate values.** Numerical values quoted in some project files are candidate values until accessions, method and output are documented. In particular, a Ginkgo–human Ku70 identity (previously reported as 68.4%) has not been computed: BLAST searches on 2026-10-15 found no Ginkgo Ku70 record in NCBI nr or the searched WGS database.
+
+---
+
 An open-source research project investigating how plant meristem stem-cell maintenance, stress resilience, DNA repair, chromatin regulation, autophagy, and proteostasis contribute to long-term meristem function.
 
 ## Research Objective
@@ -33,7 +40,7 @@ The project was developed through four major phases:
 - Primary-literature verification
 - Mechanism-by-mechanism evidence checking
 - Cross-mechanism synthesis
-- Gap validation
+- Gap assessment
 - Central research question
 - Competing hypotheses
 - Experimental framework
@@ -46,7 +53,8 @@ The project was developed through four major phases:
 - Analysis matrix
 - Validation and falsification framework
 
-### Part D — Master Integration (Stage 32)
+### Part D — Master Integration (Stages 32–34)
+*Note: the white paper summarises Stages 1–34; the working notebook uses finer-grained headings numbered up to 54.*
 - Final research architecture
 - Repository organization
 - Documentation
@@ -74,7 +82,9 @@ The project was developed through four major phases:
 
 ---
 
-## Validated Research Gaps
+## Candidate Research Gaps
+*Identified from an AI-assisted literature review; not independently validated.*
+
 1. WUS–CLV and stress-response interaction
 2. DNA repair and chromatin coordination
 3. Autophagy, proteostasis and ROS interaction
@@ -133,11 +143,12 @@ Key files include:
 - `stage_19_7_experimental_testing_validation.csv`
 - `Plant_Meristem_Longevity_Research_Lab...ipynb`
 - `WHITE-PAPER.md`
+- `analyze_tree_neb.py` and `tree_neb_*` files — **simulated** (see Disclosures)
 
 ---
 
 ## Reproducibility
-The computational workflow was developed using Google Colab and structured research outputs. The repository provides the resulting datasets, analysis outputs and documentation so that the research workflow can be inspected and reproduced.
+The computational workflow was developed using Google Colab and structured research outputs. The repository provides the resulting datasets, analysis outputs and documentation so that the research workflow can be inspected and reproduced. The repository currently holds several copies of the main notebook (`v1`, `v1 (1)`–`v1 (4)`, `v4 to 7(1)`); a single canonical notebook should be designated.
 
 ---
 
@@ -145,7 +156,7 @@ The computational workflow was developed using Google Colab and structured resea
 - **Stages 1–21.1 — Computational Discovery:** COMPLETE
 - **Stages 22–28 — Scientific Verification:** COMPLETE
 - **Stages 29–31 — Research Prioritization & Protocol Design:** COMPLETE
-- **Stage 32 — Master Integration:** COMPLETE
+- **Stages 32–34 — Master Integration:** COMPLETE (white-paper numbering)
 
 *The current project therefore represents a completed research-design and computational-discovery framework. Experimental laboratory validation remains future work.*
 
