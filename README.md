@@ -8,7 +8,7 @@ Email: `riddhika.d9b@gmail.com`
 
 ## Disclosures
 1. **AI assistance.** Developed by the author with AI assistance Gemini Notebook / NotebookLM and Python in Google Colab. Claims not yet checked against primary sources should be treated as unverified.
-2. **Simulated data.** `analyze_tree_neb.py` and its outputs (`tree_neb_cohort_summary_metrics.csv`, `tree_neb_snrna_counts_summary.csv`, `tree_neb_snrna_analysis.png`) are *simulated* (`np.random`, seed 42). Cohort differences are pre-programmed inputs, not empirical biological findings. Some notebook tables (e.g. Stage 51 gene features) are hand-entered illustrative values.
+2. **Simulated data.** `analyze_tree_neb_SIMULATED.py` and its outputs (`tree_neb_cohort_summary_metrics.csv`, `tree_neb_snrna_counts_summary.csv`, `tree_neb_snrna_analysis.png`) are *simulated* (`np.random`, seed 42). Cohort differences are pre-programmed inputs, not empirical biological findings. Some notebook tables (e.g. Stage 51 gene features) are hand-entered illustrative values.
 3. **Candidate values.** Numerical values quoted in some project files are candidate values until accessions, method and output are documented. In particular, a Ginkgo–human Ku70 identity (previously reported as 68.4%) has not been computed: BLAST searches on 2026-10-15 found no Ginkgo Ku70 record in NCBI nr or the searched WGS database.
 
 ---
@@ -149,7 +149,7 @@ Key files include:
 - `stage_19_7_experimental_testing_validation.csv`
 - `Plant_Meristem_Longevity_Research_Lab...ipynb`
 - `WHITE-PAPER.md`
-- `analyze_tree_neb.py` and `tree_neb_*` files — **simulated** (see Disclosures)
+- `analyze_tree_neb_SIMULATED.py` and `tree_neb_*` files — **simulated** (see Disclosures)
 
 ---
 
