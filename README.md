@@ -148,7 +148,7 @@ Key files include:
 ---
 
 ## Reproducibility
-The computational workflow was developed using Google Colab and structured research outputs. The repository provides the resulting datasets, analysis outputs and documentation so that the research workflow can be inspected and reproduced. The repository currently holds several copies of the main notebook (`v1`, `v1 (1)`–`v1 (4)`, `v4 to 7(1)`); a single canonical notebook should be designated.
+The computational workflow was developed using Google Colab and structured research outputs. The repository provides the resulting datasets, analysis outputs and documentation so that the research workflow can be inspected and reproduced. The repository currently holds several copies of the main notebook (`v1`, `v1 (2)`–`v1 (3)`, `v4 to 7(1)`); a single canonical notebook should be designated.
 
 ---
 
