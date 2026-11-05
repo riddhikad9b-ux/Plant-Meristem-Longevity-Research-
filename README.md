@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./banner.svg" width="100%" alt="Plant Meristem Longevity Research" />
+</p>
+
 # Plant-Meristem-Longevity-Research
 
 ## Author
@@ -10,6 +14,36 @@ Email: `riddhika.d9b@gmail.com`
 1. **AI assistance.** Developed by the author with AI assistance Gemini Notebook / NotebookLM and Python in Google Colab. Claims not yet checked against primary sources should be treated as unverified.
 2. **Simulated data.** `analyze_tree_neb_SIMULATED.py` and its outputs (`tree_neb_cohort_summary_metrics.csv`, `tree_neb_snrna_counts_summary.csv`, `tree_neb_snrna_analysis.png`) are *simulated* (`np.random`, seed 42). Cohort differences are pre-programmed inputs, not empirical biological findings. Some notebook tables (e.g. Stage 51 gene features) are hand-entered illustrative values.
 3. **Candidate values.** Numerical values quoted in some project files are candidate values until accessions, method and output are documented. In particular, a Ginkgo–human Ku70 identity (previously reported as 68.4%) has not been computed: BLAST searches on 2026-10-15 found no Ginkgo Ku70 record in NCBI nr or the searched WGS database.
+
+---
+
+## ⭐ Data analysis: microRNAs in ageing Ginkgo cambium (v3, 2026-11-04)
+The one part of this project that analyses real measured data.
+
+**Question:** do microRNAs in the vascular cambium (the lateral meristem that makes wood) change with tree age?
+
+**Data:** NCBI GEO [GSE119213](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE119213), from Wang et al., *PNAS* 117:2201 (2020), "Multifeature analyses of vascular cambial cells reveal longevity mechanisms in old *Ginkgo biloba* trees". Small-RNA counts from trees aged 20, 200 and 600 years, **2 trees per age**. Data generation and the original analysis are by Wang et al.; this repository is an independent re-analysis by the author.
+
+**Method** (`ginkgo_mirna_age_v3.ipynb`, runs in Colab in about 1 minute):
+- Merged miRNA names that are the same Ginkgo molecule matched to several species' reference names (632 names → 601 molecules)
+- CPM normalisation, mean CPM ≥ 10 (289 miRNAs)
+- Linear trend of log2 CPM against log10(age) across all 6 trees, Benjamini–Hochberg FDR
+- miR156 and miR165/166 were pre-specified before looking at results
+
+**Results**
+
+| Finding | Result |
+|---|---|
+| **miR397 falls with age** | 77-fold lower at 600 y than 20 y (log2FC −6.27, r = −0.995, **FDR = 0.01**); the only miRNA with FDR < 0.05. **Replicates** Wang et al. 2020, who listed miR397a among miRNAs that differ between young and old trees (Datasets S4/S5) |
+| Other changes | 15 miRNAs at FDR < 0.1 (12 fall, 3 rise), mostly unannotated "novel" Ginkgo miRNAs |
+| **miR165/166** | 10 of 12 distinct molecules rise with age (sign test p = 0.039); none passes FDR individually. Consistent with Wang et al. 2020, who reported miR166/165 and their targets |
+| **miR156** | No reliable change (main form ath-miR156a flat, FDR = 0.85) |
+
+**Interpretation (hypothesis, not proven):** miR397 represses laccase genes, which polymerise lignin. If miR397 drops sharply, laccases should rise in old cambium. Wang et al. 2020 instead saw small, non-significant *falls* in Lac11/Lac17-like laccases (their Fig. 6F). So miR397 loss is not clearly reflected in its known targets; other targets, or regulation at the protein level, may matter. This needs more trees and a direct miRNA–target test.
+
+**Limits:** n = 2 trees per age; one tissue; expression only. miR397 and miR166 changes were already reported by Wang et al. 2020; what this re-analysis adds is a clean duplicate-merged ranking (miR397 is the strongest single age-trend miRNA) and the miR397–laccase mismatch noted above. This is a **replication**, not a new discovery.
+
+**Correction:** an earlier version of this analysis in the main notebook counted the same miR166 molecule under several species names (e.g. "8 strong miR166s") and used fold-change cut-offs without statistics. Those results are superseded by v3.
 
 ---
 
@@ -147,7 +181,9 @@ Key files include:
 - `research_track_summary_framework.csv`
 - `stage_19_6_experimental_hypotheses.csv`
 - `stage_19_7_experimental_testing_validation.csv`
-- `Plant_Meristem_Longevity_Research_Lab...ipynb`
+- `ginkgo_mirna_age_v3.ipynb` — clean Ginkgo miRNA re-analysis (canonical data analysis)
+- `ginkgo_mirna_age_v3_RUN.ipynb` — executed copy with all outputs
+- `Plant_Meristem_Longevity_Research_Lab...ipynb` — exploratory working notebook (contains superseded analyses; the protein-structure section uses PDB 1LCD, a bacterial lac repressor, as a practice example and is unrelated to plants)
 - `WHITE-PAPER.md`
 - `analyze_tree_neb_SIMULATED.py` and `tree_neb_*` files — **simulated** (see Disclosures)
 
@@ -159,6 +195,7 @@ The computational workflow was developed using Google Colab and structured resea
 ---
 
 ## Project Status
+- **Ginkgo cambium miRNA re-analysis (real data):** COMPLETE (v3, 2026-11-04)
 - **Stages 1–21.1 — Computational Discovery:** COMPLETE
 - **Stages 22–28 — Scientific Verification:** COMPLETE
 - **Stages 29–31 — Research Prioritization & Protocol Design:** COMPLETE
